@@ -1,0 +1,39 @@
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-sqlrs[0m
+{"level":"info","ts":1587045133.057288,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1587045133.0577128,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-f6j6z[0m
+{"level":"info","ts":1587045134.2827451,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1587045134.2838488,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-trietlu-environment-jenkinsx-st-qwd2l-9v8w7[0m
+{"level":"info","ts":1587045157.3071105,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1587045157.5067985,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/environment-jenkinsx-staging.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b11d802cc3c7adff05f3334111821a48674a88ec
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mtrietlu-environment-jenkinsx-st-qwd2l-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 1
+creating the lock configmap **-lock-**-staging
+lock configmap **-lock-**-staging created
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Ignoring templates/.gitignore
+Ignoring templates/wildcardcert-secret.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+cleaning the lock configmap **-lock-**-staging
